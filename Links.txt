@@ -1,1 +1,2 @@
-Planilha das aulas 1 e 2: https://docs.google.com/spreadsheets/d/1PrcZYglZmHGdF-MVmnxTyAzdNMhmD1oy9dQ7ij-KOJ4/edit#gid=1697668495
+Planilha online: https://docs.google.com/spreadsheets/d/1PrcZYglZmHGdF-MVmnxTyAzdNMhmD1oy9dQ7ij-KOJ4/edit#gid=1697668495
+Google Colab: https://drive.google.com/drive/u/0/folders/1dPT0vGJi58Dk3Qr_pjDV-Nz9OWbgOlXy
