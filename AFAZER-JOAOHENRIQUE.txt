@@ -1,3 +1,2 @@
-1-Ver a aula 5 e anotar o máximo de coisas, INCLUINDO A IA NO FINAL
-2-Ver o extra
-3-Rever os arquivos python e organizar
+1-Ver o extra
+2-Rever os arquivos python e organizar
