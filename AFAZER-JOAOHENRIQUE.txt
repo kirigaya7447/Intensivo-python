@@ -1,6 +1,5 @@
-1-Ver o extra
-2-Rever os arquivos python e organizar
-3-Desafios para fazer: 
+1-Rever os arquivos python e organizar
+2-Desafios para fazer: 
 
 a)Aula 3: 
 Pesquise com a documentação da biblioteca Plotly ou GPT como mudar a formatação dos números do gráfico de barras;
