@@ -1,2 +1,1 @@
-Material de escrita, arquivos e dados para a realização da Imersão Python: 
-Do Excel a análise de dados, da Alura.
+Aqui estão localizados e organizados meus arquivos de estudo na Imersão Python e Análise de dados da Alura, como meus códigos, anotações e links das aulas.
