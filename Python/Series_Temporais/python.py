@@ -3,11 +3,11 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 from prophet import Prophet
 
-dados = yf.download("JNJ", start="2020-01-01", end="2023-12-31", progress=True)
+dados = yf.download("PETR4.SA", start="2020-01-01", end="2023-12-31", progress=True)
 dados = dados.reset_index()
 
-dados_treino = dados[dados["Date"] < "2023-07-31"]
-dados_teste = dados[dados["Date"] >= "2023-07-31"]
+dados_treino = dados[dados["Date"] < "2022-12-31"]
+dados_teste = dados[dados["Date"] >= "2022-03-31"]
 
 print(dados, dados_teste, dados_treino)
 
@@ -17,13 +17,13 @@ print(dados_prophet_treino)
 
 model = Prophet(weekly_seasonality=True,
                  yearly_seasonality=True,
-                 daily_seasonality=False)
+                 daily_seasonality=True)
 
-model.add_country_holidays(country_name="US")
+model.add_country_holidays(country_name="BR")
 
 model.fit(dados_prophet_treino)
 
-future = model.make_future_dataframe(periods=150)
+future = model.make_future_dataframe(periods=300)
 previsao = model.predict(future)
 
 print (previsao)
