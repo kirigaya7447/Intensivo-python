@@ -12,7 +12,3 @@ print(df_analise_saldo)
 
 grafico = pe.bar(df_analise_saldo, x="Resultado:", y="Variação (R$):", text="Variação (R$):", title="Variação X Resultado")
 grafico.show()
-
-df_analise_saldo = pe.data.tips()
-grafico = pe.pie(df_analise_saldo, values="tip", names="day", title="Hello!")
-grafico.show()
