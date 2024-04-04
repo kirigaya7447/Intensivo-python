@@ -9,3 +9,11 @@ Fazer o GroupBy da categoria de idades e gerar o gráfico de barras.
 b)Aula 4:
 Pesquisar o que é uma tupla em Python;
 Buscar a ação da Apple e recriar o gráfico de Candlestick usando a biblioteca MPLFinance.
+
+2) Arrumar a postagem do meu GitHub no linkedin
+3) Arrumar os códigos python no github
+4) Colocar imagens dos meus resultados no python
+5) Postar o certificado de conclusão
+6) Publicar sobre a imersão da Alura
+7) Continuar o jogo em java: Colocar chefão
+8) Continuar o jogo em java: Nova fase
