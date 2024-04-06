@@ -20,5 +20,5 @@ df_analise["Variação (R$):"] = df_analise["Variação (R$):"].apply(lambda con
 print("Dados a serem analisados: \n", df_analise)
 
 #cria o grafico em formato de "Torta" ou "Pizza"
-grafico = pe.pie(values=df_analise["Variação (R$):"], names=df_analise["Segmento:"], title="Segmentos e suas respectivas ações:")
+grafico = pe.pie(values=df_analise["Variação (R$):"], names=df_analise["Segmento:"], title="Segmentos e a porcentagem de movimentações de ações:")
 grafico.show()
