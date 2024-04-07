@@ -10,5 +10,5 @@ Aqui estão localizados e organizados meus arquivos de estudo na Imersão Python
 <img src="Imagens/matplot.png">
 <img src="Imagens/mpl-Petrobras.png">
 <img src="Imagens/mpl-Apple-linha.png">
-<img src="Imagens/mpl-Apple-velas.png">
+<img src="Imagens/mpl-Apple-vela.png">
 <img src="Imagens/plotly.png">
