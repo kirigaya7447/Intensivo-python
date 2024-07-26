@@ -1,0 +1,33 @@
+PROCV ou em inglês: "VLOOKUP". Ela realiza uma busca por um dado, exato ou não, e o retorna.
+
+**Sintaxe:** vlookup(*pesquisa*; *matriz ou nome*; *número da coluna*; *intervalo da pesquisa*)
+
+*pesquisa:* o valor a ser buscado.
+*matriz ou nome:* id ou nome da tabela onde o valor a ser localizado está.
+*número da coluna:* valor do id referente ao dado anterior.
+*intervalo da pesquisa:* se true(ou 0) especifica que pode aproximar o valor(0,49 para 0,5), no entanto se false(ou 1) ele realizará a busca pelo 
+valor exato.
+
+Exemplo: Temos duas tabelas: Dados Gerais e Dados Pessoais. Dentro de Dados Gerais se encontram as colunas "Nome" e "CPF", enquanto isso, dentro de 
+Dados Pessoais temos as colunas "Cpf" e "Telefone"
+
+O intuito é pegarmos o valor de telefone dentro de Dados Pessoais e trazermos para Dados Gerais. Portanto a sintaxe ficará dessa forma:
+
+Sheets e Excel:
+=PROCV(B2; Dados Pessoais!A:B; 2; 1)
+
+Calc:
+=VLOOKUP(B2; 'Dados Pessoais'.A:B; 2; 1)
+
+__________________________________________________________________________________________________________________________________________________
+SE: Para fazermos alguma verificação de dados, se forem maior que(>), menor que(<) ou iguais(=).
+
+Exemplo: Agora na planilha Dados Gerais verificarei os nomes dos usuários e colocarei uma palavra se verdadeiro, uma para o segundo caso e 
+outra para nenhum dos anteriores.
+
+Sheets e Excel:
+=SE(A2 = "João do Caminhão"; "É o João!"; SE(A2 = "Carminha Fru Fru"; "É a Carminha"; "Nenhum dos anteriores"))
+
+Calc:
+=IF(A2 = "João do Caminhão"; "É o João!"; IF(A2 = "Carminha Fru Fru"; "É a Carminha"; "Nenhum dos anteriores"))
+
