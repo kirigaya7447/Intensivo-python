@@ -14,7 +14,7 @@ Dados Pessoais temos as colunas "Cpf" e "Telefone"
 O intuito é pegarmos o valor de telefone dentro de Dados Pessoais e trazermos para Dados Gerais. Portanto a sintaxe ficará dessa forma:
 
 Sheets e Excel:
-=PROCV(B2; Dados Pessoais!A:B; 2; 1)
+=PROCV(B2; 'Dados Pessoais'!A:B; 2; 1)
 
 Calc:
 =VLOOKUP(B2; 'Dados Pessoais'.A:B; 2; 1)
@@ -31,3 +31,47 @@ Sheets e Excel:
 Calc:
 =IF(A2 = "João do Caminhão"; "É o João!"; IF(A2 = "Carminha Fru Fru"; "É a Carminha"; "Nenhum dos anteriores"))
 
+__________________________________________________________________________________________________________________________________________________
+MÁXIMO: Retorna o maior valor de uma coluna.
+
+Exemplo: Pense em uma terceira planilha para análise agora. Vamos verficar qual o maior patrimônio dos usuários.
+
+Sheets e Excel: 
+=MÁXIMO('Dados Gerais'!D:D)
+
+Calc:
+=MAX('Dados Gerais'.D:D)
+
+___________________________________________________________________________________________________________________________________________________
+MÍNIMO: Traz o menor valor de uma coluna.
+
+Exemplo: Agora vamos verificar o menor patrimônio dos usuários.
+
+Sheets e Excel
+=MÍNIMO('Dados Gerais'!D:D)
+
+Calc:
+=MIN('Dados Gerais'.D:D)
+
+___________________________________________________________________________________________________________________________________________________
+Média: Realiza uma média aritmética de uma coluna especificada.
+
+Exemplo: Agora façamos uma média dos valores dos usuários.
+
+Sheets e Excel:
+=MÉDIA('Dados Gerais'!D:D)
+
+Calc:
+=AVERAGE('Dados Gerais'.D:D)
+
+___________________________________________________________________________________________________________________________________________________
+Média com condição: Realiza uma média dos valores com uma condição especificada.
+
+Exemplo: Adicionamos mais uma coluna a frente do patrimônios dos usuários classificando valor deles como "Médio", "Médio Alto" e "cima da Média" 
+e iremos realizar a média dos valores que foram classificados como "Médio Alto".
+
+Sheets e Excel:
+=MÉDIASE('Dados Gerais'!E:E; "Médio Alto"; 'Dados Gerais'!D:D)
+
+Calc:
+=AVERAGEIF('Dados Gerais'.E:E; "Médio Alto"; 'Dados Gerais'.D:D)
